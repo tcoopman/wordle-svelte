@@ -10,7 +10,7 @@ interface State {
 
 const initialState: State = {
     currentGuess: "",
-    wordToGuess: "FLASK",
+    wordToGuess: words[Math.floor(Math.random()*words.length)].toUpperCase(),
     previousGuesses: []
 }
 
